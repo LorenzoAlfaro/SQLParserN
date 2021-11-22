@@ -1,8 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
    <TargetFrameworks>net45;net5.0-windows</TargetFrameworks>
    <UseWindowsForms>true</UseWindowsForms>
+   <Authors>Lorenzo G Alfaro</Authors>
+   <Description>A list of functions to handle database schemas and create objects based on their primary keys</Description>
+   <Copyright>Copyright (c) 2021 Lorenzo G Alfaro</Copyright>
+   <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+   <RepositoryUrl>https://github.com/LorenzoAlfaro/SQLParserN.git</RepositoryUrl>
+   <PackageReleaseNotes>First release</PackageReleaseNotes>
+   <PackageTags>database primary-key mapping</PackageTags>
+   <RepositoryType>Git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net5.0-windows'">
@@ -16,6 +24,13 @@
 
   <ItemGroup>
     <PackageReference Include="StringParserN" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
